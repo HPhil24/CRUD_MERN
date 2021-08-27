@@ -28,12 +28,12 @@ export const TodoList = () => {
                     <tbody>
                         {
                             items.map(todo => (
-                                <tr key={todo.id}>
+                                <tr key={todo._id}>
                                     <td>
                                         {todo.text}
                                     </td>
                                     <td>
-                                        <Link to={`/edit/${todo.id}`}>Edit</Link>
+                                        <Link to={`/edit/${todo._id}`}>Edit</Link>
                                     </td>
                                 </tr> 
                             ))
@@ -41,7 +41,6 @@ export const TodoList = () => {
                     </tbody>
                 </table>
             </div>
-            
         </div>
     )
 }
