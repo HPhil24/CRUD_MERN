@@ -22,6 +22,7 @@ export const TodoList = () => {
                     <thead>
                         <tr>
                             <th>Text</th>
+                            <th>Description</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -31,6 +32,9 @@ export const TodoList = () => {
                                 <tr key={todo._id}>
                                     <td>
                                         {todo.text}
+                                    </td>
+                                    <td>
+                                        
                                     </td>
                                     <td>
                                         <Link to={`/edit/${todo._id}`}>Edit</Link>
