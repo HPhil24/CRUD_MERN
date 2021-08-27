@@ -1,13 +1,19 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
 
 export const TodoForm = ({ todo, onSubmit }) => {
   const { register, handleSubmit } = useForm({
-    defaultValues: { text: todo ? todo.text : "" },
+    defaultValues: {
+      text: todo ? todo.text : "",
+      description: todo ? todo.description : "",
+    },
   });
+  const history = useHistory();
 
   const submitHandler = handleSubmit((data) => {
     onSubmit(data);
+    history.push("/");
   });
 
   return (
@@ -22,14 +28,14 @@ export const TodoForm = ({ todo, onSubmit }) => {
           autoComplete="off"
           {...register("text", { required: "Required" })}
         />
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="text">Description:</label>
         <input
           className="form-control"
           type="text"
           name="description"
           id="description"
           autoComplete="off"
-          {...register("text", { required: "Required" })}
+          {...register("description", { required: "Required" })}
         />
       </div>
       <div className="form-group">

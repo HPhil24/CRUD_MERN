@@ -34,7 +34,7 @@ export const TodoList = () => {
                                         {todo.text}
                                     </td>
                                     <td>
-                                        
+                                        {todo.description}
                                     </td>
                                     <td>
                                         <Link to={`/edit/${todo._id}`}>Edit</Link>
