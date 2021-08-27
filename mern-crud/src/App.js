@@ -6,7 +6,7 @@ import { EditTodo } from './EditTodo';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <nav className="navbar bg-light navbar-expand-lg navbar-light">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
