@@ -27,7 +27,7 @@ export const TodoForm = ({ todo, onSubmit }) => {
           id="text"
           autoComplete="off"
           {...register("text", { required: "Required" })}
-        />
+        /><br></br>
         <label htmlFor="text">Description:</label>
         <input
           className="form-control"
@@ -36,7 +36,7 @@ export const TodoForm = ({ todo, onSubmit }) => {
           id="description"
           autoComplete="off"
           {...register("description", { required: "Required" })}
-        />
+        /><br></br>
       </div>
       <div className="form-group">
         <button type="submit" className="btn btn-primary">

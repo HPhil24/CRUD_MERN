@@ -7,7 +7,7 @@ import { EditTodo } from './EditTodo';
 function App() {
   return (
     <div>
-      <nav className="navbar bg-light navbar-expand-lg navbar-light">
+      <nav className="navbar bg-dark navbar-expand-lg navbar-dark">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
             <Link to="/" className="nav-link">Todos</Link>

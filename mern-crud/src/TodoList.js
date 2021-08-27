@@ -17,8 +17,8 @@ export const TodoList = () => {
     return ( 
         <div className="container">
             <div className="mt-3">
-                <h3>Todo List</h3>
-                <table className="table table-striped mt-3">
+                <h3><center>Todo List</center></h3>
+                <table className="table table-striped table-hover table-responsive table-dark">
                     <thead>
                         <tr>
                             <th>Text</th>
